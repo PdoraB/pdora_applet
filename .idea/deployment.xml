@@ -5,7 +5,7 @@
       <paths name="tengx">
         <serverdata>
           <mappings>
-            <mapping deploy="pdora_applet" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/work_space/order/pdora_applet" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
