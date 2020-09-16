@@ -1,9 +1,12 @@
- #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''
-@author: soliva
-@Site: 
-@file: production_setting.py
-@time: 2020/9/13
-@desc:
-'''
+DEBUG = True
+SQLALCHEMY_ECHO = True
+SQLALCHEMY_DATABASE_URI = 'mysql://root:123942@127.0.0.1/food_db?charset=utf8mb4'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_ENCODING = "utf8mb4"
+
+APP = {
+    'domain':'http://pdorabox.cn/'
+}
+
+RELEASE_VERSION="20180729001"
