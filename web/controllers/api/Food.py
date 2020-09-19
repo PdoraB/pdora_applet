@@ -11,7 +11,7 @@ from common.libs.Helper import getCurrentDate,getDictFilterField,selectFilterObj
 from application import app,db
 from sqlalchemy import  or_
 
-@route_api.route("/food/index" )
+@route_api.route("/food/index", methods=[ "POST" ])
 def foodIndex():
     resp = { 'code':200 ,'msg':'操作成功~','data':{} }
     cat_list = FoodCat.query.filter_by( status = 1 ).order_by( FoodCat.weight.desc() ).all()

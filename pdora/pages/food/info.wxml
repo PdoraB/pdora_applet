@@ -9,17 +9,17 @@
                 </swiper-item>
             </block>
         </swiper>
-        <view class="dots">
+        <view class="dots">  
             <block wx:for="{{info.pics}}" wx:key="unique">
-                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
-            </block>
-        </view>
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
    </view>
    <!--商品基本介绍-->
    <view class="goods-info">
         <view class="goods-title">{{info.name}}</view>
         <view class="goods-price" style="padding-left:35rpx;">¥ {{info.price}}</view>
-        <view class="goods-price" style="color:#999;font-size:24rpx;">购买{{info.total_count}}次</view>
+        <view class="goods-price" style="color:#999;font-size:24rpx;">申请{{info.total_count}}次</view>
         <view class="goods-price" style="color:#999;font-size:24rpx;">共收到 {{info.comment_count}} 次好评</view>
         <view class="goods-info-fx">
           <image src='/images/qd.png' />
@@ -50,13 +50,13 @@
     </view>
 
     <!--底部-->
-    <view class="footer-box">
+    <view class="footer-box">      
         <view class="shop-cart-btn" bindtap="goShopCar">
             <view class="shop-num">({{shopCarNum}})</view>
-            <view style='position:absolute;bottom:10rpx;'> 购物车 </view>
+            <view style='position:absolute;bottom:10rpx;'> 收藏夹 </view>
         </view>
-        <view class="join-shop-cart" bindtap="toAddShopCar">加入购物车</view>
-        <view class="now-buy" bindtap="tobuy">立即购买</view>
+        <view class="join-shop-cart" bindtap="toAddShopCar">加入收藏夹</view>
+        <!-- <view class="now-buy" bindtap="tobuy">立即进群</view> -->
    </view>
 
    <!--购买和收藏弹窗-->
@@ -73,9 +73,9 @@
                 </view>
                 <view class="pop-goods-close" bindtap="closePopupTap"></view>
              </view>
-
+             
              <view class="buy-num-box">
-                <view class="num-label">购买数量</view>
+                <view class="num-label">申请数量</view>
                 <view class="num-box">
                     <view class="num-jian {{buyNumber == buyNumMin ? 'hui': ''}}" bindtap="numJianTap">-</view>
                     <view class="num-input">
@@ -85,11 +85,11 @@
                 </view>
              </view>  
              <view class="popup-join-btn" wx:if="{{shopType =='addShopCar'}}" bindtap="addShopCar">
-                加入购物车
+                加入收藏夹
              </view>
              <view class="popup-join-btn" wx:if="{{shopType =='tobuy'}}" bindtap="buyNow">
-                立即购买
-             </view>                      
+                发送平台
+             </view>                       
         </view>
     </view>
 </view>

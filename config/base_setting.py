@@ -9,6 +9,7 @@ SEO_TITLE = "Python Flask构建微信小程序订餐系统"
 ##过滤url
 IGNORE_URLS = [
     "^/user/login"
+    # "^/api"
 ]
 
 IGNORE_CHECK_LOGIN_URLS = [
@@ -29,8 +30,8 @@ STATUS_MAPPING = {
 }
 
 MINA_APP = {
-    'appid':'wx360d7b8ff0881fd3',
-    'appkey':'xxxxxxxxxxxxx换自己的',
+    'appid':'wx313008ab8ed2e594',
+    'appkey':'9a0364e573a7fa25133ab421fd8a1192',
     'paykey':'xxxxxxxxxxxxxx换自己的',
     'mch_id':'xxxxxxxxxxxx换自己的',
     'callback_url':'/api/order/callback'
@@ -44,7 +45,7 @@ UPLOAD = {
 }
 
 APP = {
-    'domain':'http://192.168.0.119:8999'
+    'domain':'http://154.8.227.227:8999'
 }
 
 

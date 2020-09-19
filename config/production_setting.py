@@ -6,7 +6,7 @@ SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ENCODING = "utf8mb4"
 
 APP = {
-    'domain':'http://pdorabox.cn/'
+    'domain':'https://www.pdorabox.cn'
 }
 
 RELEASE_VERSION="20180729001"
